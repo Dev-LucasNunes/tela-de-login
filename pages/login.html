@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <h1>LOGO</h1>
+      </a>
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#">Sobre</a>
+        </li>
+        <li class="header-button">
+          <a href="#">Cadastre-se</a>
+        </li>
+        <li class="header-button">
+          <a href="#">Login</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="banner">
+      <h3 class="banner__title">mensagem banner</h3>
+    </section>
+
+    <main>
+      <div class="container">
+        <section class="text">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+            blanditiis saepe harum adipisci, hic, ratione ipsum possimus nihil
+            molestiae dolorem aspernatur illum repellat beatae asperiores!
+            Dolores cum eveniet nobis quam? Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Vero blanditiis saepe harum adipisci,
+            hic, ratione ipsum possimus nihil molestiae dolorem aspernatur illum
+            repellat beatae asperiores! Dolores cum eveniet nobis quam? Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Vero blanditiis
+            saepe harum adipisci, hic, ratione ipsum possimus nihil molestiae
+            dolorem aspernatur illum repellat beatae asperiores! Dolores cum
+            eveniet nobis quam?
+          </p>
+        </section>
+        <section class="form face">
+          <form class="form-login front">
+            <h2 class="form-title">Entre na sua conta</h2>
+            <section class="inputs">
+              <fieldset class="input-form">
+                <label class="input-label" for="login">Login:</label>
+                <input
+                  name="login"
+                  id="login"
+                  class="input-text"
+                  type="text"
+                  minlength="3"
+                  required
+                />
+                <span class="mensagem erro"></span>
+              </fieldset>
+
+              <fieldset class="input-form">
+                <label class="input-label" for="senha">Senha:</label>
+                <input
+                  name="senha"
+                  id="login"
+                  class="input-text"
+                  type="password"
+                  minlength="3"
+                  required
+                />
+                <span class="mensagem erro"></span>
+              </fieldset>
+            </section>
+            <section class="buttons">
+              <div>
+                <input
+                  value="Login"
+                  class="form-button"
+                  id="login"
+                  data-botao-enviar
+                  type="submit"
+                />
+                <span class="mensagem-erro"></span>
+              </div>
+              <div>
+                <button class="register-button">
+                  <a href="#">Cadastre-se</a>
+                </button>
+                <span class="mensagem-erro"></span>
+              </div>
+            </section>
+          </form>
+
+          <form class="form-login back">
+            <h2 class="form-title">Cadastre-se</h2>
+            <section class="inputs">
+              <fieldset class="input-form">
+                <label class="input-label" for="login">Login:</label>
+                <input
+                  name="login"
+                  id="login"
+                  class="input-text"
+                  type="text"
+                  minlength="3"
+                  required
+                />
+                <span class="mensagem erro"></span>
+              </fieldset>
+
+              <fieldset class="input-form">
+                <label class="input-label" for="senha">Senha:</label>
+                <input
+                  name="senha"
+                  id="login"
+                  class="input-text"
+                  type="password"
+                  minlength="3"
+                  required
+                />
+                <span class="mensagem erro"></span>
+              </fieldset>
+            </section>
+            <section class="buttons">
+              <div>
+                <input
+                  value="Login"
+                  class="form-button"
+                  id="login"
+                  data-botao-enviar
+                  type="submit"
+                />
+                <span class="mensagem-erro"></span>
+              </div>
+              <div>
+                <button class="register-button">
+                  <a href="#">Cadastre-se</a>
+                </button>
+                <span class="mensagem-erro"></span>
+              </div>
+            </section>
+          </form>
+        </section>
+      </div>
+    </main>
+    <div class="face">
+      <div class="front">dddd</div>
+      <div class="back">kkkk</div>
+    </div>
+
+    <footer class="footer-section"><p>rodapé</p></footer>
+  </body>
+</html>
