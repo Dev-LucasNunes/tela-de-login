@@ -6,12 +6,27 @@
   margin: 2em 1em;
 }
 
+.header-button,
+.logo {
+  background-color: var(--colorOne);
+  padding: 8px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.header-button:hover {
+  transform: scale(0.95);
+}
+
 .header a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--colorThree);
 }
 
 .header-list {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }

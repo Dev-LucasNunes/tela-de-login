@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ccc;
+  background: linear-gradient(90deg, var(--colorOne), var(--colorFive));
 }
 
 .container {
@@ -35,15 +35,18 @@
 }
 
 .form-login {
+  width: 70%;
   height: 100%;
   border: 2px solid black;
   border-radius: 12px;
   position: relative;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
+  font-weight: bold;
+  background: linear-gradient(180deg, var(--colorOne), var(--colorFive));
   align-items: center;
   transform-style: preserve-3d;
   -webkit-box-shadow: -15px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -53,14 +56,14 @@
 
 .face {
   height: 100%;
-  perspective: 700px;
+  perspective: 500px;
 }
 
 .front,
 .back {
   height: 100%;
   position: absolute;
-  transition: 1s;
+  transition: 1.5s;
 }
 .front {
   z-index: 1;
@@ -70,6 +73,7 @@
 .back {
   transform: rotateY(-180deg);
   backface-visibility: hidden;
+  gap: 20px;
 }
 
 .face:hover .front {
@@ -82,7 +86,8 @@
   z-index: 1;
 }
 .form-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .input-label {
@@ -90,29 +95,53 @@
 }
 
 .input-text {
-  margin: 8px;
+  width: 90%;
+  margin: 3px;
   border-radius: 12px;
   padding: 0.5em;
 }
 
+.small-input {
+  width: 50%;
+}
+
 .buttons {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+.buttons:hover {
+  transform: scale(0.95);
 }
 
 .form-button {
-  padding: 0.5rem;
-  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--colorTwo);
+  color: var(--colorThree);
+  border: none;
+  border-bottom: 4px solid black;
 }
 
 .register-button {
   padding: 0.5rem;
-  border-radius: 12px;
+  border-radius: 15px;
   cursor: pointer;
+  background-color: var(--colorTwo);
+  border: none;
+  border-bottom: 4px solid black;
 }
 
 .register-button a {
   text-decoration: none;
   color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--colorThree);
 }

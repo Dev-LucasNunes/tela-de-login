@@ -1,2 +1,16 @@
 @import url("./header.css");
 @import url("./footer.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+:root {
+  --principal: "Montserrat", sans-serif;
+  --colorOne: #537fe7;
+  --colorTwo: #181823;
+  --colorThree: #ffffff;
+  --colorFour: #c0eef2;
+  --colorFive: #e9f8f9;
+}
+
+body {
+  font-family: var(--principal);
+}

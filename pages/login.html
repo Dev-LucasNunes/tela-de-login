@@ -17,11 +17,11 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a class="logo" href="#">
         <h1>LOGO</h1>
       </a>
       <ul class="header-list">
-        <li class="header-item">
+        <li class="header-button">
           <a href="#">Sobre</a>
         </li>
         <li class="header-button">
@@ -75,7 +75,7 @@
                 <label class="input-label" for="senha">Senha:</label>
                 <input
                   name="senha"
-                  id="login"
+                  id="password"
                   class="input-text"
                   type="password"
                   minlength="3"
@@ -84,7 +84,7 @@
                 <span class="mensagem erro"></span>
               </fieldset>
             </section>
-            <section class="buttons">
+            <section class="buttons front-buttons">
               <div>
                 <input
                   value="Login"
@@ -105,13 +105,13 @@
           </form>
 
           <form class="form-login back">
-            <h2 class="form-title">Cadastre-se</h2>
+            <h2 class="form-title">Cadastro</h2>
             <section class="inputs">
               <fieldset class="input-form">
-                <label class="input-label" for="login">Login:</label>
+                <label class="input-label" for="nome">Nome completo:</label>
                 <input
-                  name="login"
-                  id="login"
+                  name="nome"
+                  id="nome"
                   class="input-text"
                   type="text"
                   minlength="3"
@@ -121,11 +121,69 @@
               </fieldset>
 
               <fieldset class="input-form">
-                <label class="input-label" for="senha">Senha:</label>
+                <label class="input-label" for="email">E-mail:</label>
+                <input
+                  name="email"
+                  id="email"
+                  class="input-text"
+                  type="email"
+                  minlength="3"
+                  required
+                />
+                <span class="mensagem erro"></span>
+              </fieldset>
+
+              <fieldset class="input-form">
+                <label class="input-label" for="cpf"
+                  >CPF: (apenas números)</label
+                >
+                <input
+                  name="cpf"
+                  id="cpf"
+                  class="input-text small-input"
+                  type="text"
+                  minlength="11"
+                  maxlength="14"
+                  required
+                />
+                <span class="mensagem erro"></span>
+              </fieldset>
+
+              <fieldset class="input-form">
+                <label class="input-label" for="aniversario"
+                  >Data de nascimento:</label
+                >
+                <input
+                  name="aniversario"
+                  id="aniversario"
+                  class="input-text small-input"
+                  type="date"
+                  required
+                />
+                <span class="mensagem erro"></span>
+              </fieldset>
+
+              <fieldset class="input-form">
+                <label class="input-label" for="senha">Senha: <br /></label>
                 <input
                   name="senha"
-                  id="login"
-                  class="input-text"
+                  id="password"
+                  class="input-text small-input"
+                  type="password"
+                  minlength="3"
+                  required
+                />
+                <span class="mensagem erro"></span>
+              </fieldset>
+
+              <fieldset class="input-form">
+                <label class="input-label" for="senha"
+                  >Confirmar senha: <br
+                /></label>
+                <input
+                  name="senha"
+                  id="password"
+                  class="input-text small-input"
                   type="password"
                   minlength="3"
                   required
@@ -136,30 +194,20 @@
             <section class="buttons">
               <div>
                 <input
-                  value="Login"
-                  class="form-button"
-                  id="login"
+                  value="Confirmar"
+                  class="form-button back-button"
+                  id="cadastro"
                   data-botao-enviar
                   type="submit"
                 />
                 <span class="mensagem-erro"></span>
               </div>
               <div>
-                <button class="register-button">
-                  <a href="#">Cadastre-se</a>
-                </button>
-                <span class="mensagem-erro"></span>
-              </div>
             </section>
           </form>
         </section>
       </div>
     </main>
-    <div class="face">
-      <div class="front">dddd</div>
-      <div class="back">kkkk</div>
-    </div>
-
     <footer class="footer-section"><p>rodapé</p></footer>
   </body>
 </html>
