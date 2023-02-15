@@ -55,7 +55,7 @@
           </p>
         </section>
         <section class="form face">
-          <form class="form-login front">
+          <form class="form-login front" data-form-front>
             <h2 class="form-title">Entre na sua conta</h2>
             <section class="inputs">
               <fieldset class="input-form">
@@ -89,7 +89,7 @@
                 <input
                   value="Login"
                   class="form-button"
-                  id="login"
+                  id="login-button"
                   data-botao-enviar
                   type="submit"
                 />
@@ -104,7 +104,7 @@
             </section>
           </form>
 
-          <form class="form-login back">
+          <form class="form-login back" data-form-back>
             <h2 class="form-title">Cadastro</h2>
             <section class="inputs">
               <fieldset class="input-form">
@@ -144,6 +144,7 @@
                   type="text"
                   minlength="11"
                   maxlength="14"
+                  pattern="\d{3}\.?\d{3}\.?\d{3}-?\{2}"
                   required
                 />
                 <span class="mensagem erro"></span>
@@ -167,7 +168,7 @@
                 <label class="input-label" for="senha">Senha: <br /></label>
                 <input
                   name="senha"
-                  id="password"
+                  id="password-register"
                   class="input-text small-input"
                   type="password"
                   minlength="3"
@@ -182,7 +183,7 @@
                 /></label>
                 <input
                   name="senha"
-                  id="password"
+                  id="password-confirmation"
                   class="input-text small-input"
                   type="password"
                   minlength="3"
@@ -209,5 +210,6 @@
       </div>
     </main>
     <footer class="footer-section"><p>rodapé</p></footer>
+    <script src="../js/mainLogin.js" type="module"></script>
   </body>
 </html>
