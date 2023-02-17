@@ -68,7 +68,8 @@
                   minlength="3"
                   required
                 />
-                <span class="mensagem erro"></span>
+                <br/>
+                <span class="mensagem-erro"></span>
               </fieldset>
 
               <fieldset class="input-form">
@@ -78,10 +79,11 @@
                   id="password"
                   class="input-text"
                   type="password"
-                  minlength="3"
+                  minlength="6"
                   required
                 />
-                <span class="mensagem erro"></span>
+                <br/>
+                <span class="mensagem-erro"></span>
               </fieldset>
             </section>
             <section class="buttons front-buttons">
@@ -117,7 +119,8 @@
                   minlength="3"
                   required
                 />
-                <span class="mensagem erro"></span>
+                <br/>
+                <span class="mensagem-erro"></span>
               </fieldset>
 
               <fieldset class="input-form">
@@ -130,7 +133,8 @@
                   minlength="3"
                   required
                 />
-                <span class="mensagem erro"></span>
+                <br/>
+                <span class="mensagem-erro"></span>
               </fieldset>
 
               <fieldset class="input-form">
@@ -144,10 +148,10 @@
                   type="text"
                   minlength="11"
                   maxlength="14"
-                  pattern="\d{3}\.?\d{3}\.?\d{3}-?\{2}"
                   required
                 />
-                <span class="mensagem erro"></span>
+                <br/>
+                <span class="mensagem-erro"></span>
               </fieldset>
 
               <fieldset class="input-form">
@@ -159,22 +163,26 @@
                   id="aniversario"
                   class="input-text small-input"
                   type="date"
+                  max="9999-12-31" 
                   required
-                />
-                <span class="mensagem erro"></span>
+                /> <!--esse max é para o ano ficar com no maximo 4 digitos-->
+                <br/>
+                <span class="mensagem-erro"></span>
               </fieldset>
 
               <fieldset class="input-form">
                 <label class="input-label" for="senha">Senha: <br /></label>
                 <input
-                  name="senha"
+                  name="password"
                   id="password-register"
                   class="input-text small-input"
                   type="password"
-                  minlength="3"
+                  minlength="6"
+                  data-password
                   required
                 />
-                <span class="mensagem erro"></span>
+                <br/>
+                <span class="mensagem-erro"></span>
               </fieldset>
 
               <fieldset class="input-form">
@@ -182,14 +190,16 @@
                   >Confirmar senha: <br
                 /></label>
                 <input
-                  name="senha"
+                  name="passwordConfirmation"
                   id="password-confirmation"
                   class="input-text small-input"
                   type="password"
-                  minlength="3"
+                  minlength="6"
+                  data-passwordConfirmation
                   required
                 />
-                <span class="mensagem erro"></span>
+                <br/>
+                <span class="mensagem-erro"></span>
               </fieldset>
             </section>
             <section class="buttons">
@@ -213,3 +223,4 @@
     <script src="../js/mainLogin.js" type="module"></script>
   </body>
 </html>
+
